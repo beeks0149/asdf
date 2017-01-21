@@ -1,0 +1,80 @@
+import java.util.Date;
+
+public class Item {
+	
+	private String id;
+	private String name;
+	private String artist;
+	private boolean checkedIn;
+	private int checkedOutPeriod;
+	private Date checkedOutDate;
+	private Date dueDate;
+	private Date createDate;
+	
+	public Item (String id, String name, String artist, boolean checkedIn, int checkedOutPeriod, Date checkedOutDate, Date dueDate, Date createDate){
+		this.id = id;
+		this.name = name;
+		this.artist = artist;
+		this.checkedIn = checkedIn;
+		this.checkedOutPeriod = checkedOutPeriod;
+		this.checkedOutDate = checkedOutDate;
+		this.dueDate = dueDate;
+		this.createDate = createDate;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getArtist() {
+		return artist;
+	}
+
+	public void setArtist(String artist) {
+		this.artist = artist;
+	}
+
+	public boolean isCheckedIn() {
+		return checkedIn;
+	}
+
+	public void setCheckedIn(boolean checkedIn) {
+		this.checkedIn = checkedIn;
+	}
+
+	public int getCheckedOutPeriod() {
+		return checkedOutPeriod;
+	}
+
+	public Date getCheckedOutDate() {
+		return checkedOutDate;
+	}
+
+	public void setCheckedOutDate(Date checkedOutDate) {
+		this.checkedOutDate = checkedOutDate;
+	}
+
+	public Date getDueDate() {
+		return dueDate;
+	}
+
+	public void setDueDate(Date dueDate) {
+		this.dueDate = dueDate;
+	}
+
+	public Date getCreateDate() {
+		return createDate;
+	}
+}
